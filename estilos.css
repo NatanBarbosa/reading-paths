@@ -1,0 +1,136 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    background: linear-gradient(180deg, rgba(152, 245, 209, 0.51) 0%, rgba(90, 176, 219, 0.65) 100%) no-repeat;
+}
+
+.bg-white{
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.logo-name{
+    align-self: center;
+    margin-left: 5px;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+main{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 40px 15px;
+    margin-top: 20px;
+}
+
+.titulo{ 
+    font-weight: 700;
+    font-size: 32px;
+    color: #55A9D3;
+    text-align: center;
+}
+
+.sobre-site {
+    background: #98F5D1; 
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10px 10px 10px 0;
+}
+
+.div-sobre{
+    display: flex;
+    flex-direction: row;
+}
+
+.tags-sobre{
+    width: 50%;
+}
+
+.tag-sobre{
+    background: white;
+    width: 80%;
+    border: 1px solid black;
+    font-weight: 600;
+    padding: 3px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: inset 7px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.tag-sobre.ativa, .tag-sobre:hover{
+    width: 100%;
+    border: 1px solid #57924B;
+    color: #57924B;
+    box-shadow: inset 7px 0px 0px #91EB7F;
+    cursor: pointer;
+}
+
+.tag-sobre:hover{
+    width: 80%;
+}
+
+.tag-sobre.ativa:hover{
+    width: 100%;
+}
+
+.tag-sobre span{
+    margin-left: 5px;
+}
+
+.descricao-sobre{
+    width: 50%;
+    border: 1px solid #57924B;
+    padding: 15px;
+    background: white;
+    height: 190px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.img-sobre{
+    height: 200px;
+}
+
+.catalogo-livros{
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.catalogo-livros .titulo{
+    text-align: start;
+}
+
+@media (max-width: 576.98px) {
+    main{
+        border-radius: 0%;
+        padding: 40px 0 !important;
+    }
+
+    .div-sobre{
+        flex-direction: column;
+    }
+
+    .tags-sobre{
+        width: 100%;
+    }
+
+    .descricao-sobre{
+        margin-top: 7px;
+        width: 100%;
+    }
+
+    .sobre-site{
+        width: 100%;
+        border-radius: 0;
+    }
+}
