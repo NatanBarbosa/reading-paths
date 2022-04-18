@@ -10,7 +10,7 @@ body{
     background: linear-gradient(180deg, rgba(152, 245, 209, 0.51) 0%, rgba(90, 176, 219, 0.65) 100%) no-repeat;
 }
 
-.bg-white{
+nav {
     background: rgba(255, 255, 255, 0.9);
 }
 
@@ -133,4 +133,109 @@ main{
         width: 100%;
         border-radius: 0;
     }
+}
+
+/*Modo Dark*/
+
+body {
+    background-color: #fafafa;
+    transition: background 0.2s linear;
+}
+
+.dark .logotipo{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+.dark nav, .dark main.container{
+    background: #000  !important ;
+}
+
+body.dark  {
+    background: #b9b8b8;
+}
+
+.dark h3 {
+    color: #fff;
+}
+
+.dark .sobre-site{
+    background: #B25ADB;
+}
+
+.dark   #descricao, .dark .titulo{
+    color: #fff;
+}
+
+.dark .tag-sobre{
+    background: #373737;
+}
+
+.dark .tag-sobre{
+    border: 1px solid #FFB2FF;
+    color: #ffffff;
+    box-shadow: inset 7px 0px 0px #FFB2FF;
+}
+
+.dark .tag-sobre i{
+    color: #fff;
+}
+
+.dark div.descricao-sobre{
+    background: #373737;
+}
+
+.dark label{
+    background: #fff;
+}
+
+.dark label .ball{
+    background-color: #000;
+    
+}
+
+.ckeckbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.label{
+    background: #111;
+    border-radius: 50px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    
+    transform: scale(1.5);
+}
+
+.label .ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear ;
+}
+
+.ckeckbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon{
+    color: #f1c40f;
+}
+
+.fa-sun{
+    color: #f39c12;
 }

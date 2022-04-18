@@ -23,3 +23,12 @@ function trocarInfo(info_tipo, tag_html){
         document.getElementById('descricao-imagem').src = "imagens/como-funciona.png";
     }
 }
+
+function ModoEscuro(){
+    let chk = document.getElementById('chk')
+
+    chk.addEventListener("change", () => {
+        document.body.classList.toggle('dark')  
+    });
+}
+ModoEscuro();
