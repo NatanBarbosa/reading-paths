@@ -110,6 +110,14 @@ main{
     text-align: start;
 }
 
+.escolha-livros{
+    border: 1px solid red;
+}
+
+.livro{
+    border: 1px solid red;
+}
+
 @media (max-width: 576.98px) {
     main{
         border-radius: 0%;
