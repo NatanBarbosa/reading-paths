@@ -8,10 +8,12 @@ html, body{
 
 body{
     background: linear-gradient(180deg, rgba(152, 245, 209, 0.51) 0%, rgba(90, 176, 219, 0.65) 100%) no-repeat;
+    transition: .3s;
 }
 
 nav {
     background: rgba(255, 255, 255, 0.9);
+    transition: .3s;
 }
 
 .logo-name{
@@ -27,6 +29,7 @@ main{
     border-radius: 15px;
     padding: 40px 15px;
     margin-top: 20px;
+    transition: .3s;
 }
 
 .titulo{ 
@@ -111,12 +114,98 @@ main{
 }
 
 .escolha-livros{
-    border: 1px solid red;
+    display: flex;
+    justify-content: center;
 }
 
 .livro{
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
 }
+
+.livro-capa{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+}
+
+.livro-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.livro-info .titulo-livro{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.livro-info .autor-livro, .livro-info .data-lancamento{
+    font-weight: 400;
+    font-size: 14px;
+    color: #6A6A6A;
+}
+
+.livro-info .autor-livro{
+    margin-top: -10px;
+}
+
+.livro-btn-sinopse{
+    width: 100%;
+    border-radius: 8px;
+    background: #D491EB;
+    border: 1px solid #D491EB;
+    color: white;
+    font-weight: 700;
+}
+
+.livro-btn-sinopse:hover{
+    background: #b149d3;
+    border: 1px solid #b149d3;
+    transition: .3s;
+}
+
+.livro-btn-ler{
+    width: 100%;
+    border-radius: 8px;
+    background: #91EB7F;
+    border: 1px solid #91EB7F;
+    color: white;
+    font-weight: 700;
+}
+
+.livro-btn-ler:hover{
+    background: #50be3a;
+    transition: .3s;
+}
+
+.livro-btn-ler.desabilitado{
+    background: #CACACA;
+    border: 1px solid #CACACA;
+}
+
+.livro-btn-ler.desabilitado:hover{
+    cursor: not-allowed;
+}
+
+/*Barra de scroll*/
+.descricao-sobre::-webkit-scrollbar {
+    width: 4px;
+}
+
+.descricao-sobre::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.descricao-sobre::-webkit-scrollbar-thumb {
+    background-color: #55A9D3;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #55A9D3;  /* creates padding around scroll thumb */
+}
+
 
 @media (max-width: 576.98px) {
     main{
@@ -143,23 +232,52 @@ main{
     }
 }
 
-/*Modo Dark*/
+@media (max-width: 767.98px) {
+    .escolha-livros{
+        gap: 40px;
+    }
 
-body {
-    background-color: #fafafa;
-    transition: background 0.2s linear;
+    .livro-capa{
+        margin-bottom: 10px;
+    }
+
+    .livro-btn-ler, .livro-btn-sinopse{
+        max-width: 200px;
+        align-self: center;
+    }
+
+    .livro{
+        text-align: center;
+    }
+
+    .catalogo-livros .titulo{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .titulo::after{
+        content: '';
+        display: block;
+        width: 100px;
+        height: 10px;
+        background-color: #55A9D3;
+        margin: 5px auto;
+    }
 }
 
+/*Modo Dark*/
 .dark .logotipo{
     border: 2px solid rgb(255, 255, 255);
     border-radius: 50%;
 }
 .dark nav, .dark main.container{
-    background: #000  !important ;
+    background: #000 !important;
+    transition: .3s;
 }
 
 body.dark  {
-    background: #b9b8b8;
+    background: linear-gradient(180deg, rgba(90, 90, 90, 0.8) 0%, rgb(77, 77, 77) 100%);
+    transition: .3s;
 }
 
 .dark h3 {
@@ -191,6 +309,48 @@ body.dark  {
 .dark div.descricao-sobre{
     background: #373737;
 }
+
+.dark .autor-livro, .dark .data-lancamento{
+    color: #b4b4b4;
+}
+
+.dark .livro-btn-ler{
+    background: #5AB0DB;
+    border: 1px solid #5AB0DB;
+}
+
+.dark .livro-btn-ler.desabilitado{
+    background: gray;
+    border: 1px solid gray;
+}
+
+.dark .livro-btn-ler.desabilitado:hover{
+    background: gray;
+    border: 1px solid gray;
+}
+
+.dark .livro-btn-ler:hover{
+    background: #2b84b1;
+    border: 1px solid #2b84b1;
+}
+
+.dark .descricao-sobre{
+    border: 1px solid #B25ADB;
+}
+
+.dark .popover-header{
+    background: rgb(63, 63, 63);
+}
+
+.dark .popover-body{
+    background: rgb(117, 117, 117);
+    color: white;
+}
+
+.dark .popover-arrow{
+    color: rgb(117, 117, 117);
+}
+
 
 .dark label{
     background: #fff;
