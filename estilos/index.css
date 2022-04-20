@@ -1,28 +1,3 @@
-html, body{
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    box-sizing: border-box;
-    overflow-x: hidden;
-}
-
-body{
-    background: linear-gradient(180deg, rgba(152, 245, 209, 0.51) 0%, rgba(90, 176, 219, 0.65) 100%) no-repeat;
-    transition: .3s;
-}
-
-nav {
-    background: rgba(255, 255, 255, 0.9);
-    transition: .3s;
-}
-
-.logo-name{
-    align-self: center;
-    margin-left: 5px;
-    font-size: 20px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
 main{
     background: #FFFFFF;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
@@ -266,24 +241,6 @@ main{
 }
 
 /*Modo Dark*/
-.dark .logotipo{
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 50%;
-}
-.dark nav, .dark main.container{
-    background: #000 !important;
-    transition: .3s;
-}
-
-body.dark  {
-    background: linear-gradient(180deg, rgba(90, 90, 90, 0.8) 0%, rgb(77, 77, 77) 100%);
-    transition: .3s;
-}
-
-.dark h3 {
-    color: #fff;
-}
-
 .dark .sobre-site{
     background: #B25ADB;
 }
@@ -349,61 +306,4 @@ body.dark  {
 
 .dark .popover-arrow{
     color: rgb(117, 117, 117);
-}
-
-
-.dark label{
-    background: #fff;
-}
-
-.dark label .ball{
-    background-color: #000;
-    
-}
-
-.ckeckbox{
-    opacity: 0;
-    position: absolute;
-}
-
-.label{
-    background: #111;
-    border-radius: 50px;
-    cursor: pointer;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 5px;
-    position: relative;
-    height: 26px;
-    width: 50px;
-    
-    transform: scale(1.5);
-}
-
-.label .ball{
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-
-    height: 22px;
-    width: 22px;
-    transform: translateX(0px);
-    transition: transform 0.2s linear ;
-}
-
-.ckeckbox:checked + .label .ball {
-    transform: translateX(24px);
-}
-
-.fa-moon{
-    color: #f1c40f;
-}
-
-.fa-sun{
-    color: #f39c12;
 }

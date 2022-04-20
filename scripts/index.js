@@ -1,9 +1,3 @@
-//habilitar popovers
-var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl)
-})
-
 //Trocar informações daa div de informações
 function trocarInfo(info_tipo, tag_html){
     //remover o ativo atual
@@ -29,12 +23,3 @@ function trocarInfo(info_tipo, tag_html){
         document.getElementById('descricao-imagem').src = "imagens/como-funciona.png";
     }
 }
-
-function ModoEscuro(){
-    let chk = document.getElementById('chk')
-
-    chk.addEventListener("change", () => {
-        document.body.classList.toggle('dark')  
-    });
-}
-ModoEscuro();

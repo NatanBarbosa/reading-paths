@@ -1,0 +1,148 @@
+.container-principal{
+    margin: 25px auto;
+}
+
+.leitura-status-div, .livro-div{
+    background: white;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.titulo-div{
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.titulo-livro{
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.capitulo-livro{
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+}
+
+.div-secao{
+    margin-top: 25px;
+}
+
+.subtitulo{
+    font-weight: 400;
+    font-size: 16px;
+    color: #6F6F6F;
+}
+
+#progresso-leitura{
+    width: 20%;
+}
+
+.conhecido{
+    color: #34A274;
+}
+
+.desconhecido{
+    color: #B25ADB;
+}
+
+.lista-escolhas{
+    list-style: none;
+}
+
+.riscado{
+    text-decoration: line-through;
+}
+
+.btn-concentracao{
+    width: 100%;
+    border: 1px solid #34A174;
+    background: transparent;
+    border-radius: 10px;
+    padding: 8px;
+    color: #34A174;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.btn-concentracao:hover{
+    background: #34A174;
+    color: #fff;
+    transition: .2s;
+}
+
+.livro-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.secao-marca-paginas{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.numero-pagina{
+    width: 70px;
+    height: 70px;
+    background: #5AB0DB;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.numero-pagina .nome-capitulo{
+    font-size: 12px;
+}
+
+.numero-pagina.atual{
+    height: 90px;
+    background: #98F5D1;
+    color: black;
+}
+
+/*Modo escuro*/
+.dark .leitura-status-div, .dark .livro-div{
+    background: black;
+}
+
+.dark .titulo-div, .dark .titulo-livro, .dark .capitulo-livro{
+    color: white;
+}
+
+.dark hr{
+    background: #fff;
+}
+
+.dark .subtitulo{
+    color: #a1a1a1;
+}
+
+.dark .numero-pagina{
+    background: #B25ADB;
+}
+
+.dark .numero-pagina.atual{
+    background: #5AB0DB;
+    color: white;
+}
+
+.dark .btn-concentracao{
+    border: 1px solid #217eac;
+    color: #5AB0DB;
+}
+
+.btn-concentracao:hover{
+    background: #217eac;
+    color: #fff;
+    transition: .2s;
+}
