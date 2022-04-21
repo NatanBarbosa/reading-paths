@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,10 +35,97 @@
       </nav>
 
       <div class="row container container-principal">
-        <aside class="col-md-3 leitura-status-div">
-            <h2 class="titulo-div">Status de leitura</h2>
-            <hr>
+            <main class="livro-div">
+                <div class="mt-4">
+                    <button class="btn btn-outline-secondary mb-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#leitura-status-div" aria-controls="offcanvasExample">Exibir status da leitura</button>
+                </div>
 
+                <div class="secao-leitura-livro">
+                    <!-- Botão voltar -->
+                    <button type="button" id="btn-voltar" class="btn-virar-pagina">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                    </button>
+
+                    <!-- livro -->
+                    <div id="livro" class="livro">
+                        <!-- Página Capa -->
+                        <div id="p1" class="pagina">
+                            <div class="folha-frente">
+                                <div id="f1" class="conteudo-frente">
+                                    <h1>frente 1</h1>
+                                </div>
+                            </div>
+                            <div class="folha-verso">
+                                <div id="v1" class="conteudo-verso">
+                                    <p>verso 1</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Página 2 -->
+                        <div id="p2" class="pagina">
+                            <div class="folha-frente">
+                                <div id="f2" class="conteudo-frente">
+                                    <p>frente 2</p>
+                                </div>
+                            </div>
+                            <div class="folha-verso">
+                                <div id="v2" class="conteudo-verso">
+                                    <p>verso 2</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Página 3 -->
+                        <div id="p3" class="pagina">
+                            <div class="folha-frente">
+                                <div id="f3" class="conteudo-frente">
+                                    <p>frente 3</p>
+                                </div>
+                            </div>
+                            <div class="folha-verso">
+                                <div id="v3" class="conteudo-verso">
+                                    <p>verso 3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botão Avançar -->
+                    <button type="button" id="btn-avancar" class="btn-virar-pagina">
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="secao-marca-paginas">
+                    <div class="numero-pagina atual" id="marca-pag-1">
+                        <span class="nome-capitulo">Titulo livro</span>
+                        <strong>1</strong>
+                    </div>
+
+                    <div class="numero-pagina" id="marca-pag-2">
+                        <span class="nome-capitulo">Cap. 1</span>
+                        <strong>2</strong>
+                    </div>
+
+                    <div class="numero-pagina" id="marca-pag-3">
+                        <span class="nome-capitulo">Cap. 2</span>
+                        <strong>3</strong>
+                    </div>
+
+                    <div class="numero-pagina" id="marca-pag-4">
+                        <span class="nome-capitulo">Verso</span>
+                        <strong>4</strong>
+                    </div>
+                </div>
+            </main>
+      </div>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="leitura-status-div" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h2 class="titulo-div">Status de leitura</h2>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
             <h3 class="titulo-livro">Em um mundo novo</h3>
             <span class="capitulo-livro"><i class="fa-solid fa-bookmark me-2"></i> Capítulo <span id="numero-capitulo">1 - nome capítulo</span></span>
 
@@ -72,44 +159,8 @@
             <div class="div-secao" id="secao-modo-concentacao">
                 <button class="btn-concentracao">Modo concentração</button>
             </div>
-        </aside>
-        <main class="col-md-8 offset-md-1 livro-div">
-            <div class="secao-leitura-livro">
-                aaaa
-            </div>
-            <div class="secao-marca-paginas">
-                <div class="numero-pagina">
-                    <span class="nome-capitulo">Nome do capítulo</span>
-                    <strong>1</strong>
-                </div>
-
-                <div class="numero-pagina atual">
-                    <span class="nome-capitulo">Nome do capítulo</span>
-                    <strong>2</strong>
-                </div>
-
-                <div class="numero-pagina">
-                    <span class="nome-capitulo">Nome do capítulo</span>
-                    <strong>3</strong>
-                </div>
-
-                <div class="numero-pagina">
-                    <span class="nome-capitulo">Nome do capítulo</span>
-                    <strong>4</strong>
-                </div>
-
-                <div class="numero-pagina">
-                    <span class="nome-capitulo">Nome do capítulo</span>
-                    <strong>5</strong>
-                </div>
-
-                <div class="numero-pagina">
-                    <span class="nome-capitulo">Nome do capítulo</span>
-                    <strong>6</strong>
-                </div>
-            </div>
-        </main>
-      </div>
+        </div>
+    </div>
 
 </body>
 </html>

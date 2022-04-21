@@ -85,6 +85,7 @@
     flex-direction: row;
     gap: 15px;
     align-items: flex-end;
+    margin-top: 25px;
 }
 
 .numero-pagina{
@@ -110,9 +111,109 @@
     color: black;
 }
 
+.secao-leitura-livro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.livro{
+    width: 350px;
+    height: 500px;
+    position: relative;
+    transition: transform 0.5s;
+}
+
+.pagina{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+}
+
+.folha-frente, .folha-verso{
+    background-color: #535353;
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.6s;
+}
+
+.folha-frente{
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid white;
+}
+
+.conteudo-verso{
+    transform: rotateY(180deg);
+}
+
+.folha-verso{
+    z-index: 0;
+}
+
+.conteudo-frente, .conteudo-verso{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 15px;
+}
+
+.conteudo-frente h1{
+    align-self: center;
+    margin: 0 auto;
+}
+
+.btn-virar-pagina{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.5s;
+}
+
+.btn-virar-pagina:hover i{
+    color: #636363;
+}
+
+.btn-virar-pagina i{
+    font-size: 50px;
+    color: gray;
+}
+
+/*Ordem das páginas*/
+#p1{
+    z-index: 3;
+}
+
+#p2{
+    z-index: 2;
+}
+
+#p3{
+    z-index: 1;
+}
+
+/*Efeito da página virada*/
+.virada .folha-frente, .virada .folha-verso{
+    transform: rotateY(-180deg);
+}
+
 /*Modo escuro*/
-.dark .leitura-status-div, .dark .livro-div{
+.dark .livro-div{
     background: black;
+}
+
+.dark .offcanvas{
+    background: linear-gradient(180deg, rgb(90, 90, 90) 0%, rgb(77, 77, 77) 100%);
 }
 
 .dark .titulo-div, .dark .titulo-livro, .dark .capitulo-livro{
@@ -141,7 +242,7 @@
     color: #5AB0DB;
 }
 
-.btn-concentracao:hover{
+.dark .btn-concentracao:hover{
     background: #217eac;
     color: #fff;
     transition: .2s;
