@@ -95,7 +95,7 @@ main{
 
 .livro{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     max-width: 450px;
 }
 
@@ -118,10 +118,15 @@ main{
     font-size: 18px;
 }
 
-.livro-info .autor-livro, .livro-info .data-lancamento{
+.livro-info .autor-livro, .livro-info {
     font-weight: 400;
     font-size: 14px;
     color: #6A6A6A;
+}
+
+.data-lancamento{
+    font-weight: 500;
+    color: #000;
 }
 
 .livro-info .autor-livro{
