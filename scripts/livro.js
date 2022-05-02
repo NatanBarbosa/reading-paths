@@ -1,3 +1,4 @@
+const secao_leitura_livro = document.getElementsByClassName('secao-leitura-livro')[0];
 const btn_voltar = document.getElementById('btn-voltar');
 const btn_avancar = document.getElementById('btn-avancar');
 const livro = document.getElementById('livro');
@@ -24,6 +25,9 @@ function abrirLivro(){
     livro.style.transform = "translateX(50%)";
     btn_voltar.style.transform = "translateX(-180px)";
     btn_avancar.style.transform = "translateX(180px)";
+
+    secao_leitura_livro.style.alignSelf = 'flex-start';
+    secao_leitura_livro.style.width = '870px';
 }
 
 function fecharLivro(estaNoComeco) {
@@ -35,6 +39,9 @@ function fecharLivro(estaNoComeco) {
 
     btn_voltar.style.transform = "translateX(0px)";
     btn_avancar.style.transform = "translateX(0px)";
+
+    secao_leitura_livro.style.alignSelf = 'center';
+    secao_leitura_livro.style.width = 'auto';
 }
 
 function irProximaPagina(){
@@ -67,6 +74,8 @@ function irProximaPagina(){
                 throw new Error('Estado Desconhecido');
         }
         pagAtual++;
+
+        btn_voltar.scrollIntoView()
     }
 }
 
@@ -100,5 +109,7 @@ function irPaginaAnterior(){
                 throw new Error('Estado Desconhecido');
         }
         pagAtual--;
+
+        btn_avancar.scrollIntoView()
     }
 }
