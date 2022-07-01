@@ -1,7 +1,7 @@
 const historia = [
     {
         capitulo: 1,
-        nomeCap: "Nome do capítulo",
+        nomeCap: "O milagre de Vithetu",
         conteudo: `<p>500.000 anos depois de Ódom, uma explosão cósmica que culminou no surgimento da galáxia, aconteceu um milagre. Por uma série de coincidências, surgiu-se um planeta muito rico em recursos minerais, chamado Vithetu, capaz de sustentar uma população de 1 trilhão de habitantes por centenas de trilhões de anos. </p>
         <p>Em outra galáxia, havia outros dois planetas com suas respetivas populações. Eles estavam em paz, até o momento que descobriram que o planeta de ambos não poderia sustentar suas populações por mais de 5 anos.</p>
         <p>Todavia, eles descobriram esse planeta milagroso que surgiu em outra galáxia, e assim começou uma rivalidade para ver quem iria dominá-lo primeiro e continuar com o reino vivo.</p>
@@ -10,7 +10,7 @@ const historia = [
     },
     {
         capitulo: 2,
-        nomeCap: "Nome do capítulo",
+        nomeCap: "Lork, o reino do acolhimento",
         conteudo: `<p>Um desses reinos em decadência era o reino Lork, que estava voltado para no lado oeste. Nesse reino comandava Cratóris, conhecido como pai de todos. </p>
         <p>Em Lork havia múltiplos tipos de habitantes, os ciborgues, humanos e outras espécies de seres vivos.</p>
         <p>Cratóris Tinha uma filha que ele amava muito. Talia era uma ciborgue especial. Ela nasceu com o dom de combate e um espírito de guerreira, com um leve toque de teimosia. </p>
@@ -19,7 +19,7 @@ const historia = [
     },
     {
         capitulo: 3,
-        nomeCap: "Nome do capítulo",
+        nomeCap: "Waso, o reino da guerra",
         conteudo: `<p>Outro desses reinos era o reino Waso. Esse reino havia apenas ciborgue e, os quais adoravam guerra, morte, destruição e conflitos. Todavia nem todos os habitantes desse reino concordavam com essa cultura, e por isso muitos se refugiavam no reino vizinho. Por causa disso, o Ditador desse reino ficava com raiva por seus habitantes ficarem fugindo de seus reinos. Por isso ele desenvolveu uma raiva de Lork e desejava sua decadência.</p>
         <p>Conquistar o planeta Vithetu antes de Lork era a chance perfeita para acabar de vez com o reino Lork. </p>       
         `,
@@ -27,7 +27,7 @@ const historia = [
     },
     {
         capitulo: 4,
-        nomeCap: "Nome do capítulo",
+        nomeCap: "A corrida espacial",
         conteudo: `<p>A fim de sair na frente nessa corrida espacial em direção à vithetu, o reino de Waso decidiu preparar um ataque surpresa ao reino de Lork, para destruir seus foguetes e incapacitá-los de saírem de seu planeta e conquistarem um novo. Eles estavam muito cientes de que perderiam muitos soldados e cidadãos nessa batalha, mas ainda estavam confiantes que com esse ataque surpresa, eles destruiriam qualquer chance de Lork conquistar Vithetu. O rei de Waso disse:</p>
         <p>- vamos acabar de uma vez por todas com esses fracos de carne e osso. Somente a raça guerreira de Waso deve prevecer. VIVA A WASO!!!</p>
         <p>-VIVAAA!!!</p>          
@@ -36,14 +36,14 @@ const historia = [
     },
     {
         capitulo: 5,
-        nomeCap: "Nome do capítulo",
+        nomeCap: "O desertor",
         conteudo: `<p>O que o reino de Waso não esperava um dos soldados para os quais havia sido anunciado o ataque surpresa deserdou de fininho e fugiu para o reino de Lork, porque dias depois descobriu que estava com a doença da ferrugem e perdeu completamente sua vontade de lutar. Apesar de ter sido caçado e levado vários tiros, ele conseguiu fugir para o outro reino. </p>       
         `,
         imagem: "capa-alita.jpg"
     },
     {
         capitulo: 6,
-        nomeCap: "Nome do capítulo",
+        nomeCap: "A menina guerreira Talia",
         conteudo: `<p>Talia, filha de cratóris, tinha acabado de sair de uma briga contra imigrantes ilegais em uma cidade deserta, e nisso acabou se machucando e quebrando algumas peças. Por sorte ele conseguiu se consertar com o kit de emergência.</p>
         <p>Voltando para sua cidade, ela ouviu um gatinho miando e tentou seguir o som. Ao encontrar o gato, se deparou com a cena de um veículo todo quebrado com um ciborgue machucado. Ela observou que esse ciborgue era do Reino inimigo, e já ficou alerta, mas logo viu que ele não tinha condições nem de andar. Ela tirou ela do carro e perguntou:</p>
         <p>- Qual o seu nome? O que aconteceu com você?</p>
@@ -59,7 +59,7 @@ const historia = [
     },
     {
         capitulo: 7,
-        nomeCap: "Nome do capítulo",
+        nomeCap: "A escolha de Talia",
         conteudo: `<p>Talia sai correndo para contar a informação para o pai.</p>
         <p>- Pai, temos que nos preparar militarmente. Waso vai nos atacar de surpresa. Pare de investir nesses foguetes. Precisamos nos defender.</p>
         <p>- FILHA!!! Nunca acredite nas palavras de um wasiano. Esse ciborgue estava mentindo para você tentar me manipular a atrasar a melhoria dos nossos foguetes e Waso sair na frente!</p>
@@ -119,6 +119,8 @@ function nextCap(){
         }
 
         attMarcaPaginas();
+        attStatusNomeCap(capAtual, historia[capAtual - 1].nomeCap);
+        attProgressoPaginas();
     }
 }
 
@@ -130,6 +132,7 @@ function previousCap() {
         imgBox.innerHTML = `<img src="imagens/${historia[capAtual - 1].imagem}" class="img-fluid">`
 
         attMarcaPaginas();
+        attStatusNomeCap(capAtual, historia[capAtual - 1].nomeCap);
     }
 }
 
@@ -209,8 +212,9 @@ function makeChoose(parte, escolha){
             ]
         }
 
-        historia.push(continuacao[0]);
-        historia.push(continuacao[1]);
+        continuacao.forEach(cap => {
+            historia.push(cap);
+        })
         maxCaps = historia.length;
         nextCap();
     } else if(parte === 2){
@@ -391,4 +395,27 @@ function makeChoose(parte, escolha){
         maxCaps = historia.length;
         nextCap();
     }
+}
+
+function attStatusNomeCap(numero, nome){
+    document.querySelector("#numero-capitulo").innerHTML = numero
+    document.querySelector("#nome-capitulo").innerHTML = nome
+}
+
+attStatusNomeCap(1, "O milagre de Vithetu");
+
+function attProgressoPaginas(){
+    const paginasLidas = document.querySelector("#paginas-lidas");
+    const paginasTotais = document.querySelector("#paginas-totais");
+    const porcentagemLida = document.querySelector("#porcentagem-lida");
+    const progressoLeitura = document.querySelector("#progresso-leitura");
+
+    let porcentagem = (capAtual * 100) / maxCaps;
+    porcentagem = parseInt(porcentagem);
+
+    paginasLidas.innerHTML = capAtual
+    paginasTotais.innerHTML = maxCaps
+    porcentagemLida.innerHTML = `${porcentagem}%`
+    progressoLeitura.innerHTML = `${porcentagem}%`
+    progressoLeitura.style.width = `${porcentagem}%`
 }
