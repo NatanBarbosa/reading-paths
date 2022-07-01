@@ -87,6 +87,7 @@
     gap: 15px;
     align-items: flex-end;
     margin-top: 25px;
+    flex-wrap: wrap;
 }
 
 .numero-pagina{
