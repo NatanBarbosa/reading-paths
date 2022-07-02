@@ -11,4 +11,4 @@
 <h2>Como funciona o site?
 <h2>
 <p>O site facilita o leitor a percorrer por todos os caminhos possíveis da história. No meio da própria história, o usuário vai se deparar com botões clicáveis, que vão definir o rumo da história de acordo com a ação do personagem. Ao lado do livro em questão, há um menu de status mostrando as escolhas já selecionadas, o progresso de leitura, entre outras informações.
-</p>
+</p>oi
