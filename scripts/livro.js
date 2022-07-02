@@ -419,3 +419,5 @@ function attProgressoPaginas(){
     progressoLeitura.innerHTML = `${porcentagem}%`
     progressoLeitura.style.width = `${porcentagem}%`
 }
+
+attProgressoPaginas();
