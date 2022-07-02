@@ -38,7 +38,7 @@
             <main class="livro-div">
                 <div class="mt-4 d-flex justify-content-between">
                     <button class="btn btn-outline-secondary mb-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#leitura-status-div" aria-controls="offcanvasExample">Exibir status da leitura</button>
-					<button class="btn btn-danger mb-2" type="button" onClick="location.reload()">Reiniciar leitura</button>
+					<button class="btn btn-danger mb-2" type="button" onClick="location.reload">Reiniciar leitura</button>
 				</div>
 
                 <div class="secao-leitura-livro">

@@ -370,7 +370,7 @@ function makeChoose(parte, escolha){
                     capitulo: 10,
                     nomeCap: "Fugindo para os braços do pai",
                     conteudo: `<p>Com muito medo, Talia foge para localização do pai, decidindo não ajudar seu irmão. </p>
-                    <p>Mas, durante seu caminho, soldados de waso cercam e atacam-a brutamente, deixando várias partes de seu corpo quebradas.  </p>
+                    <p>Mas, durante seu caminho, soldados de waso cercam e atacam-a brutamente, deixando várias partes do corpo dela quebradas.  </p>
                     <p>Seu pai então foi informado do acontecido e foi até talia buscá-la </p>
                     <p>- Me desculpe por ser fraca, pai... Não fui forte o bastante nem para proteger uma pessoa</p>
                     <p>- Tudo bem filha... Pra falar a verdade, eu nunca gostei que você fosse uma guerreira mesmo. Eu tinha muito medo de perde-la.</p>
