@@ -6,7 +6,7 @@ const historia = [
         <p>Em outra galáxia, havia outros dois planetas com suas respetivas populações. Eles estavam em paz, até o momento que descobriram que o planeta de ambos não poderia sustentar suas populações por mais de 5 anos.</p>
         <p>Todavia, eles descobriram esse planeta milagroso que surgiu em outra galáxia, e assim começou uma rivalidade para ver quem iria dominá-lo primeiro e continuar com o reino vivo.</p>
         `,
-        imagem: "capa-alita.jpg"
+        imagem: "capituloUm.jpg"
     },
     {
         capitulo: 2,
@@ -15,7 +15,7 @@ const historia = [
         <p>Em Lork havia múltiplos tipos de habitantes, os ciborgues, humanos e outras espécies de seres vivos.</p>
         <p>Cratóris Tinha uma filha que ele amava muito. Talia era uma ciborgue especial. Ela nasceu com o dom de combate e um espírito de guerreira, com um leve toque de teimosia. </p>
         `,
-        imagem: "capa-alita.jpg"
+        imagem: "capituloDois.jpg"
     },
     {
         capitulo: 3,
@@ -23,7 +23,7 @@ const historia = [
         conteudo: `<p>Outro desses reinos era o reino Waso. Esse reino havia apenas ciborgue e, os quais adoravam guerra, morte, destruição e conflitos. Todavia nem todos os habitantes desse reino concordavam com essa cultura, e por isso muitos se refugiavam no reino vizinho. Por causa disso, o Ditador desse reino ficava com raiva por seus habitantes ficarem fugindo de seus reinos. Por isso ele desenvolveu uma raiva de Lork e desejava sua decadência.</p>
         <p>Conquistar o planeta Vithetu antes de Lork era a chance perfeita para acabar de vez com o reino Lork. </p>       
         `,
-        imagem: "capa-alita.jpg"
+        imagem: "capituloTres.jpg"
     },
     {
         capitulo: 4,
@@ -32,14 +32,14 @@ const historia = [
         <p>- vamos acabar de uma vez por todas com esses fracos de carne e osso. Somente a raça guerreira de Waso deve prevecer. VIVA A WASO!!!</p>
         <p>-VIVAAA!!!</p>          
         `,
-        imagem: "capa-alita.jpg"
+        imagem: "capituloQuatro.jpg"
     },
     {
         capitulo: 5,
         nomeCap: "O desertor",
         conteudo: `<p>O que o reino de Waso não esperava um dos soldados para os quais havia sido anunciado o ataque surpresa deserdou de fininho e fugiu para o reino de Lork, porque dias depois descobriu que estava com a doença da ferrugem e perdeu completamente sua vontade de lutar. Apesar de ter sido caçado e levado vários tiros, ele conseguiu fugir para o outro reino. </p>       
         `,
-        imagem: "capa-alita.jpg"
+        imagem: "capituloCinco.jpg"
     },
     {
         capitulo: 6,
@@ -55,7 +55,7 @@ const historia = [
         <p>- Mas como assim? Por que Waso odeia tanto a gente????</p>
         <p>- ...</p>
         <p>O ciborgue já havia morrido.</p>`,
-        imagem: "capa-alita.jpg"
+        imagem: "capituloSeis.jpg"
     },
     {
         capitulo: 7,
@@ -65,7 +65,7 @@ const historia = [
         <p>- FILHA!!! Nunca acredite nas palavras de um wasiano. Esse ciborgue estava mentindo para você tentar me manipular a atrasar a melhoria dos nossos foguetes e Waso sair na frente!</p>
         <p>Talia acreditava fortemente nas palavras do ciborgue. Ele tinha um espírito de guerreiro, assim como Talia, e por isso ela entendia suas intenções e raiva contra aquele rei.</p>
         <p>Por isso, Talia toma uma escolha</p>`,
-        imagem: "capa-alita.jpg",
+        imagem: "capituloSete.jpg",
         escolhaParte: 1,
         escolhas: 
         [
@@ -159,9 +159,9 @@ function makeChoose(parte, escolha){
             continuacao = [
                 {
                     capitulo: 8,
-                    nomeCap: "Nome do capítulo",
+                    nomeCap: "A grande Escolha",
                     conteudo: `<p>Depois de discutir com o pai, Talia vai embora da sala e fica pensativa. Ela sabia que se não fizesse nada, seu reino não teria chances de sobreviver. Seu espirito de guerreira estava mais aceso do que nunca. Ela pensou:</p> <p>- O pessoal desse reino e o meu pai são muito pacifistas. Se eu não fizer algo, ninguém vi fazer e a gente não vai conseguir se defender do ataque surpresa. Por isso é nós que precisamos atacar primeiro, e imediatamente!</p> <p>- Será que eu posso contar com algumas pessoas para me ajudar? Ou é melhor eu fazer tudo sozinha?</p>`,
-                    imagem: "capa-alita.jpg",
+                    imagem: "capituloOito.jpeg",
                     escolhaParte: 2,
                     escolhas: [
                         {
@@ -180,23 +180,23 @@ function makeChoose(parte, escolha){
             continuacao = [
                 {
                     capitulo: 8,
-                    nomeCap: "Nome do capítulo",
+                    nomeCap: "Waso ataca então",
                     conteudo: `<p>Tália escuta o seu pai, rei de Lork, mas ainda estava muito preocupada com a decisão de Cratóris, tal decisão deixou a guerreira bastante triste e então decidiu sair do reino, indo a um planeta afastando, onde, por conta da cultura acabou perdendo seu espírito de guerreira.</p> 
                     <p>Ouve-se 2 anos de paz, e enquanto tudo estava na paz, o reino Lork não progrediu militarmente. Mas o reino Waso cada vez mais forte militarmente.</p>
                     <p>Waso planejou um ataque perfeito, nesses 2 anos, para a queda de Lork. </p>
                     <p>Com isso o reino Lork recebe a seguinte noticia de seus conselheiros, que Waso estava a poucas anos luz de seu reino e que estavam preparados para destruir todo o império.</p>
                     <p>Cratóris ouvindo esse anúncio, fica bastante desesperado e ordena que todo reino, fique em prontidão, mas, que sabia que seu império não teria chances sobre Waso, já que não ouviu sua filha, Talia.</p>`,
-                    imagem: "capa-alita.jpg",
+                    imagem: "capituloOitoanosdepaz.jpg",
                 },
                 {
                     capitulo: 9,
-                    nomeCap: "Nome do capítulo",
+                    nomeCap: "Wasianos chegam a capital",
                     conteudo: `<p>Talia, ouvindo esse anuncio decidi voltar para Lork, para defender seus irmãos, mas não sabia  como, já que estava sem vontade e força de lutar.</p>
                     <p>As 72 horas - luz o primeiro ataque começa ao império </p>
                     <p>Os wasianos logo chegam à capital do reino. </p>
                     <p>Talia, chegando já próxima ao reino, se depara com diversos soldados e cidadãos mortos e uma cena lê chama a atenção, um cidadão preste a ser morto por um wasiano.</p>
                     <p>Então, passa na mente duas escolhas, ajudar o cidadão ou deixa-lo ser morto. </p>`,
-                    imagem: "capa-alita.jpg",
+                    imagem: "capituloNove.jpg",
                     escolhaParte: 3,
                     escolhas: [
                         {
@@ -223,116 +223,116 @@ function makeChoose(parte, escolha){
             continuacao2 = [
                 {
                     capitulo: 9,
-                    nomeCap: "Nome do capítulo",
+                    nomeCap: "Unindo Forças",
                     conteudo: `<p>Talia esfriou a cabeça e pensou racionalmente. Ela no fundo sabia que não era forte o suficiente para vencer um exército inteiro. Por isso decidiu ir para o lugar onde os melhores caçadores de recompensas se reúnem. No bar da caçada.</p>
                     <p>Chegando lá ela explicou a situação do ataque surpresa e apelou:</p>
                     <p>- Vamos unir nossas forças para sobrevivermos dessa! Ninguém nesse reino é mais capaz de lutar do que a gente...</p>`,
-                    imagem: "capa-alita.jpg"
+                    imagem: "noBar.jpg"
                 }, 
                 {
                     capitulo: 10,
-                    nomeCap: "Nome do capítulo",
+                    nomeCap: "Os 50 caçadores",
                     conteudo: `<p>Os caçadores de início riram dela:</p>
                     <p>- Você quer que aa gente invada o outro reino baseado na informação desse estrangeiro? E você que vai liderar? Você não mata nem mosca.</p>
                     <p>Então tália retrucou:</p>
                     <p>- Venham todos vocês para cima de mim de uma vez. Quem conseguir me nocautear pode levar minha cabeça.</p>
                     <p>Mesmo todos os guerreiros indo para cima de uma vez, Talia conseguiu dar conta de todos. No fim eles aceitaram sua superioridade e viram que ela tinha um verdadeiro espírito de guerreiro, por isso a seguiram. </p>
                     <p>Com isso Talia juntou 50 caçadores de alto nível para invadir Waso.</p>`,
-                    imagem: "capa-alita.jpg"
+                    imagem: "capituloDez.jpg"
                 }, 
                 {
                     capitulo: 11,
-                    nomeCap: "Nome do capítulo",
+                    nomeCap: "Não podemos falhar",
                     conteudo: `<p>O plano de Talia era o mesmo do de Waso. Invadir o reino, destruir os foguetes e veículos e fugir de volta para Lork. </p>
                     <p>Depois de meses treinando e se preparando para o ataque, finalmente chegou o dia. </p>
                     <p>- Guerreiros, esse ataque definirá se o nosso reino sobreviverá ou não! Se falharmos, nosso reino perecerá..., Mas se vencermos, poderemos conquistar Vithetu!!! – gritou Talia!</p>
                     <p>eles subiram na nave e viajaram para Waso, mais especificamente para uma parte abandonada do Reino, mas que convenientemente não ficava tão longe da capital.</p>`,
-                    imagem: "capa-alita.jpg"
+                    imagem: "capituloOnze.jpg"
                 }, 
                 {
                     capitulo: 12,
-                    nomeCap: "Nome do capítulo",
+                    nomeCap: "Disfarce é a unica estratégia",
                     conteudo: `<p>Depois de chegar na parte abandonada do reino, os guerreiros se disfarçaram de ciborgue e seguiram cuidadosamente até a capital. Eles se disfarçaram de mecânicos e falaram que vieram inspecionar os foguetes de Waso para ver o que seria necessário implementar para que ele viajasse até Vithetu.</p>
                     <p>Todavia não demorou muito tempo para que fossem descobertos no meio da praça principal.</p>
                     <p>Eles tiraram seus disfarces e começaram a guerra. Eram trocas de tiros e lâminas se chocando, uma atrás da outra. </p>
                     <p>Nessa batalha na praça, 10 soldados de Lork acabaram morrendo, mas eles conseguiram derrotar todos os soldados até que chegassem reforços.</p>
                     <p>Eles correram até onde sabiam que estavam os foguetes. Na garagem subterrânea do castelo principal.</p> `,
-                    imagem: "capa-alita.jpg"
+                    imagem: "capituloDoze.jpeg"
                 }, 
                 {
                     capitulo: 13,
-                    nomeCap: "Nome do capítulo",
+                    nomeCap: "O Duelo",
                     conteudo: `<p>Depois de muita batalha, eles finalmente chegaram no lugar que dava para garagem, mas lá estava esperando o guerreiro mais forte de Waso. Trigontes tinha uma força bruta implacável, além de uma velocidade acima da média e era muito inteligente. Tinha 20 anos de experiência em batalhas e um espírito de guerreiro:</p>
                     <p>- Garotinha, vejo que você é a mais forte do bando. Esses outros manés não têm chance contra mim. Te desafio para um duelo de vida ou morte. Se você vencer, poderá passar para a garagem.</p>
                     <p>-Fechado! – disse Talia. </p>`,
-                    imagem: "capa-alita.jpg"
+                    imagem: "capituloTreze.jpg"
                 }, 
                 {
                     capitulo: 14,
-                    nomeCap: "Nome do capítulo",
+                    nomeCap: "Ponto vital",
                     conteudo: `<p>E então começou a batalha mortal. Os dois eram muito rápidos para os outros caçadores acompanharem. A única coisa que eles percebiam eram os vultos e a troca de socos entre os dois.</p>
                     <p>Apesar de muito forte, Talia estava na desvantagem. Trigontes era forte demais. Ele previa todos os movimentos de Talia e contra-atacava de maneira brutal.</p>
                     <p>Com várias partes do corpo quebrada, Tália se lembrou de seu reino...</p>
                     <p>- Todos estão contando comigo... Se eu perder aqui, ninguém será páreo para Trigontes e o nosso reino estará perdido. – Pensou Tália antes de receber o soco que a mataria.</p>
                     <p>Então de repente, ela se esquiva do soco e contra-ataca com um chute, usando todas as suas forças restantes.</p>
                     <p>O chute acaba quase acertando um ponto vital de todos os ciborgues. A sua nuca. Com isso, ambos Trigontes e Talia desmaiam.</p>`,
-                    imagem: "capa-alita.jpg"
+                    imagem: "capituloQuatroze.jpg"
                 }, 
                 {
                     capitulo: 15,
-                    nomeCap: "Nome do capítulo",
+                    nomeCap: "Retirada",
                     conteudo: `<p>Os caçadores estavam embasbacados com a luta, mas não havia tempo a perder. Eles pegaram o corpo de Talia, entraram na garagem e plantaram bombas.</p>
                     <p>Para sair eles roubaram uma nave de lá. Colocaram o corpo de Tália na nave e todos subiram para a retirada. Assim que saíram do castelo, as bombas explodiram, não deixando nem o pó dos foguetes que seriam usados para ir para Vithetu.</p>`,
-                    imagem: "capa-alita.jpg"
+                    imagem: "capituloQuinze.jpg"
                 }, 
                 {
                     capitulo: 16,
-                    nomeCap: "Nome do capítulo",
+                    nomeCap: "Dever de uma guerreira",
                     conteudo: `<p>Ao chegar em casa eles levaram Talia direto para o rei e explicaram toda a operação. O rei caiu em prantos. Por ele não ter acreditado na filha, ela teve que se machucar muito para proteger Lork.</p>
                     <p>- Minha filha, desculpe seu pai tão ignorante – disse o rei</p>
                     <p>- Não tem problema pai, eu fiz meu dever como guerreira</p>
                     <p>- Filha, eu estou muito velho conservador para ser rei. O Reino precisa de jovens brilhantes como você. Quero que assuma o reino. Não se preocupe. Eu te ajudo até você pegar o jeito</p>
                     <p>- Pai...</p>`,
-                    imagem: "capa-alita.jpg"
+                    imagem: "capituloDezesseis.jpg"
                 }, 
                 {
                     capitulo: 17,
-                    nomeCap: "Nome do capítulo",
+                    nomeCap: "Paz ",
                     conteudo: `<p>3 anos se passaram após esse acontecimento. Waso não tinha condições nem para fazer vingança, e nem para sair na frente na corrida espacial. Talia, a nova rainha, havia concluído sua missão de aprimorar os foguetes para ir para Vithetu, e então isso aconteceu.</p>
                     <p>Os primeiros cidadãos que viajaram para lá falaram que o planeta era perfeito.</p>
                     <p>Com o feedback positivo, foi só questão de tempo para Lork se migrar totalmente e Waso ir à decadência.</p>`,
-                    imagem: "capa-alita.jpg"
+                    imagem: "capituloDezessete.jpg"
                 }, 
             ]
         } else {
             continuacao2 = [
                 {
                     capitulo: 9,
-                    nomeCap: "Nome do capítulo",
+                    nomeCap: "Somente Eu",
                     conteudo: `<p>- Ninguém desse reino têm o espírito de guerreiro de verdade. Somente eu posso lidar com isso.</p>
                     <p>Com uma sede de luta, Talia imediatamente rouba uma nave alheia e parte o mais rápido possível para o ataque a Waso. Ela tinha pressa pois sabia que o ataque surpresa de Waso poderia acontecer a qualquer momento.</p>
                     <p>Então Talia seguiu em direção à uma cidade abandonada do reino, perto da capital e pousou por lá despercebida a princípio. Com isso ela pegou algumas roupas velhas e largadas e se disfarçou de habitante.</p>
                     <p>O plano dela era esgueirar sorrateiramente até a garagem embaixo do castelo, plantar as bombas lá, detonar e explodir os foguetes que iriam para Vithetu e fugir.</p>`,
-                    imagem: "capa-alita.jpg"
+                    imagem: "apenasela.jpg"
                 }, 
                 {
                     capitulo: 10,
-                    nomeCap: "Nome do capítulo",
+                    nomeCap: "Pode vir todos ",
                     conteudo: `<p>Sorrateiramente ela consegue passar pela segurança e entrar no castelo. Ela caminha lentamente pelos corredores, tomando cuidado para não ser vista e desacordando seguranças aos poucos quando necessário.</p>
                     <p>Todavia, num descuido, ela falha ao desacordar um dos guardas e ele consegue chamar reforços. Ela tenta fugir, mas é cercada</p>
                     <p>- Droga, pisei na bola... Agora vou ter que dar conta disso tudo sozinha – pensou Talia.</p>
                     <p>E então começou. A menina nocauteava um soldado após o outro, mas não paravam de vir mais. Todo o exército de Waso tinha se concentrado no castelo para deter a menina. Depois de meia hora lutando, Talia finalmente cansou e foi capturada.  </p>`,
-                    imagem: "capa-alita.jpg"
+                    imagem: "nocauteandovarios.jpg"
                 }, 
                 {
                     capitulo: 11,
-                    nomeCap: "Nome do capítulo",
+                    nomeCap: "A vitória de um Reino",
                     conteudo: `<p>O rei de Waso marcou uma hora de execução pública para a garota e anunciou tanto para os próprios habitantes como para os de Lork.</p> 
                     <p>O rei de Lork caiu em prantos e ficou desesperado pela Filha. Ele queria a todo custo resgatá-la, mas já era tarde demais.</p>
                     <p>- Como fui tolo. Eu devia ter conversado melhor com ela e explicado meu ponto. Mas simplesmente joguei na cara dela que o que estava falando era bobagem, e por isso ela foi teimosa e foi invadir o outro reino, sozinha – Pensou Cratóris.</p>
                     <p>Com o rei sem esperanças, o Reino de Lork nunca mais foi o mesmo, e foi só decaindo e decaindo.</p>
                     <p>No fim, Waso venceu a corrida espacial e Lork viveu seus últimos anos na pobresa e desesperança.</p>`,
-                    imagem: "capa-alita.jpg"
+                    imagem: "lorkdecadencia.jpg"
                 }, 
             ]
         }
@@ -348,43 +348,43 @@ function makeChoose(parte, escolha){
             continuacao3 = [
                 {
                     capitulo: 10,
-                    nomeCap: "Nome do capítulo",
+                    nomeCap: "Ajudar é a melhor solução",
                     conteudo: `<p>Talia, decidi ajudar um irmão. Analisando o terreno, ela encontra uma lança, onde ela respira e lança em direção ao peito, acertando o em cheio o wasiano. Diante dessa situação o cidadão vai em direção a Talia, abraçando-a. Nesse momento, na cabeça de Talia, passa várias memorias em sua mente trazendo novamente o seu espirito de guerreira</p>
                     <p>Talia, então se junta aos guerreiros lorkindo, criando planos e presentes em diversas batalhas. </p>
                     <p>Durante 7 dias de batalha, o império lorkindo vence, ficando completamente destruído e o império wasiano é expulso.</p>`,
-                    imagem: "capa-alita.jpg"
+                    imagem: "ajudandoirmao.webp"
                 }, 
                 {
                     capitulo: 11,
-                    nomeCap: "Nome do capítulo",
+                    nomeCap: "A Grande vitória",
                     conteudo: `<p>No fim da guerra o pai de todos, realiza uma grande comemoração, onde Cratóris  pede desculpas à população e propões a Talia que assuma o reino em seu lugar.</p>
                     <p>- Sinto muito pai, mas não posso aceitar. Eu nasci paraa lutar, não para governar. Eu não vou conseguir reerguer o reino nesse estado. Só você consegue</p>
                     <p>- Tem razão filha... Deixa essa tarefa com seu velho pai. Vou compensar as coisas.</p>
                     <p>Aos poucos o reino de Lork vai voltando ao normal, e em paralelo aa produção dos foguetes para Vithetu continua. Mas como será que está lá em Waso? </p>`,
-                    imagem: "capa-alita.jpg"
+                    imagem: "lorknormal.jpg"
                 }, 
             ]
         } else {
             continuacao3 = [
                 {
                     capitulo: 10,
-                    nomeCap: "Nome do capítulo",
+                    nomeCap: "Fugindo para os braços do pai",
                     conteudo: `<p>Com muito medo, Talia foge para localização do pai, decidindo não ajudar seu irmão. </p>
                     <p>Mas, durante seu caminho, soldados de waso cercam ela e a atacam brutamente, deixando várias partes do corpo dela quebradas.  </p>
                     <p>Seu pai então foi informado do acontecido e foi até talia buscá-la </p>
                     <p>- Me desculpe por ser fraca, pai... Não fui forte o bastante nem para proteger uma pessoa</p>
                     <p>- Tudo bem filha... Pra falar a verdade, eu nunca gostei que você fosse uma guerreira mesmo. Eu tinha muito medo de perde-la.</p>
                     <p>- Pai...</p>`,
-                    imagem: "capa-alita.jpg"
+                    imagem: "talialamentando.jpg"
                 }, 
                 {
                     capitulo: 11,
-                    nomeCap: "Nome do capítulo",
+                    nomeCap: "Deixando seu povo",
                     conteudo: `<p>Enquanto pai e Filha se abraçam do lado de dentro do castelo, o reino de Lork cai em ruínas do lado de fora. Os soldados Wasianos conquistaram todos os cantos e não sobra nenhum lugar para se esconder. Era uma questão de tempo até que Talia e seu pai fossem encontrados.</p>
                     <p>Em um ato de desespero, Talia propõe:</p>
                     <p>- Pai, vamos para o subterrâneo do castelo, pegar um foguete e fugir para outro planeta.</p>
                     <p>E dito e feito. Talia e seu pai conseguem fugir dos Wasianos em um foguete e seguiram sem rumo para o espaço, na esperança de acharem um lugar para se abrigar, mas ao mesmo tempo com a vergonha de ter abandonado seu povo e seu reino...</p>`,
-                    imagem: "capa-alita.jpg"
+                    imagem: "deixandoseupovo.jpg"
                 }, 
             ]
         }
